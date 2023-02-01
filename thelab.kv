@@ -1,5 +1,36 @@
-BoxLayoutExample: 
+AnchorLayoutExample:
 
+<AnchorLayoutExample>:
+	Button:
+		# right,left,center
+		anchor_x: "left"
+		# bottom,top,center
+		anchor_y : "left"
+		text: "A"
+		size_hint: .2, .2
+	# Button:
+	#	text: "A"
+	#	size_hint: .1, .1
+	Button:
+		text: "A"
+
+<BoxLayoutExample>:
+	orientation: "vertical"
+	Button:
+		text: "A"
+		size_hint: 0.5 , 0.5 
+		# size: "100dp" ,"80dp"
+		# x(start percentage from left), center_x(centers of buttons percentages), right(right corner of buttons percentage)
+		# y,center_y, top
+		pos_hint: {"center_x":0.5}
+	BoxLayout:
+		orientation:"horizontal"
+		spacing: "10dp"
+		Button:
+			text: "B1"
+			size_hint: 1 , 0.5 
+		Button:
+			text: "B2"
 
 <MainWidget>:
 	Button:
